@@ -12,7 +12,7 @@ if(stricmp(playerhand,"sword"))
     hitp=8+level*2;
     defp=level*2-6;
 }
-else if(stricmp(playerhand,"arrow"))
+else if(stricmp(playerhand,"bow"))
 {
     if(stricmp(playertype,"archer")!=0)
     hitp=10+level*2;
@@ -43,4 +43,10 @@ else if(stricmp(playerhand,"shield"))
 {
     hitp=0+level*2;
     defp=level*4+4;
+}
+else
+{
+    playerhand="Bare Hand";
+    hitp=level*2;
+    defp=level;
 }
