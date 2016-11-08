@@ -10,7 +10,7 @@ void armoury()
         cin>>x1;
         switch(x1)
         {
-        case '49':
+        case 49:
             {
                 if(money<300)
                 {
@@ -21,7 +21,7 @@ void armoury()
                 money-=300;
                 break;
             }
-        case '50':
+        case 50:
             {
                 if(money<250)
                 {
@@ -32,7 +32,7 @@ void armoury()
                 money-=250;
                 break;
             }
-        case '51':
+        case 51:
             {
                 if(money<400)
                 {
@@ -43,7 +43,7 @@ void armoury()
                 money-=400;
                 break;
             }
-        case '52':
+        case 52:
             {
                 if(money<350)
                 {
@@ -54,7 +54,7 @@ void armoury()
                 money-=350;
                 break;
             }
-        case '53':
+        case 53:
             {
                 if(money<300)
                 {
@@ -65,7 +65,7 @@ void armoury()
                 money-=300;
                 break;
             }
-        case '54':
+        case 54:
             {
                 if(money>=500)
               {
