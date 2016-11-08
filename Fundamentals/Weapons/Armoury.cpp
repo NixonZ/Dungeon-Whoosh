@@ -3,14 +3,14 @@ using namespace std;
 void armoury()
 {
     cout<<"Welcome to the armour shop adventurer\n";
-    int x1;
+    char x1;
     do
     {
         cout<<"What do you want to buy?\n1-Sword(300)\n2-Bow(250)\n3-staff(400)\n4-katana(350)\n5-Shield\n6-Sharpen your shield\ne-exit\n";
         cin>>x1;
         switch(x1)
         {
-        case 1:
+        case '49':
             {
                 if(money<300)
                 {
@@ -21,7 +21,7 @@ void armoury()
                 money-=300;
                 break;
             }
-        case 2:
+        case '50':
             {
                 if(money<250)
                 {
@@ -32,7 +32,7 @@ void armoury()
                 money-=250;
                 break;
             }
-        case 3:
+        case '51':
             {
                 if(money<400)
                 {
@@ -43,7 +43,7 @@ void armoury()
                 money-=400;
                 break;
             }
-        case 4:
+        case '52':
             {
                 if(money<350)
                 {
@@ -54,7 +54,7 @@ void armoury()
                 money-=350;
                 break;
             }
-        case 5:
+        case '53':
             {
                 if(money<300)
                 {
@@ -65,7 +65,7 @@ void armoury()
                 money-=300;
                 break;
             }
-        case 6:
+        case '54':
             {
                 if(money>=500)
               {
@@ -115,5 +115,5 @@ void armoury()
         case 'e':cout<<"bye and good luck";break;
         default:cout<<"Idiot";
         }
-    }while(x1!=6);
+    }while(x1!='e');
 }
