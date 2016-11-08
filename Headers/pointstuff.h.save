@@ -1,0 +1,16 @@
+#ifndef POINTSTUFF_H_INCLUDED
+#define POINTSTUFF_H_INCLUDED
+
+
+void hospital(int why);
+void health();
+int battle(int a1);
+void attributes();
+void expe1();
+void playertype();
+void armoury();
+void weaponsattributes();
+int ask();
+
+
+#endif

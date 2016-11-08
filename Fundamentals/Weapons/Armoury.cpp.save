@@ -3,7 +3,7 @@
 #include<strings.h>
 #include<cstring>
 #include "../../Headers/variabless.h"
-#include "../../Headers/pointstuff.h"
+#
 using namespace std;
 void armoury()
 {

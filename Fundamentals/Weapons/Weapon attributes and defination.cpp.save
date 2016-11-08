@@ -7,7 +7,7 @@ void weaponsattributes()
     /*Attributes would be
       hit points
       defense points*/
-
+      extern int hitp,defp,magep,wear; extern char *playerhand;
 if(!(strcasecmp(playerhand,"sword")))
 {
     hitp=8+level*2;
