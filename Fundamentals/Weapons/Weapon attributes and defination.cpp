@@ -1,95 +1,125 @@
 #include<iostream>
 #include<string.h>
+#include<strings.h>
+#include<cstring>
 #include "../../Headers/variabless.h"
+#include "../../Headers/pointstuff.h"
 using namespace std;
-void weaponsattributes()
+void armoury()
 {
-    /*Attributes would be
-      hit points
-      defense points*/
-
-if(!(strcasecmp(playerhand,"sword")))
-{
-    hitp=8+level*2;
-    defp=level*2-6;
-
-}
-else if(!(strcasecmp(playerhand,"bow")))
-{
-    if(strcasecmp(playertype,"archer")!=0)
-    hitp=8+level*3;
-    else
-        hitp=6+level*2;
-    defp=level*2-10;
-}
-else if(!(strcasecmp(playerhand,"staff")))
-{
-    if(!(strcasecmp(playertype,"mage")))
+    cout<<"Welcome to the armour shop adventurer\n";
+    char x1;
+    do
     {
-        hitp=3+level*2;
-        magep=level*3+2;
-    }
-    else
-    {
-        hitp=3+level*3;
-    }
-    defp=level*2-4;
-}
-else if(!(strcasecmp(playerhand,"katana")))
-{
-    if(strcasecmp(playertype,"warrior")!=0)
-        hitp=10+level*3;
-    else
-        hitp=10+level*2;
-    defp=level*3-3;
-}
-else if(!(strcasecmp(playerhand,"shield")))
-{
-    hitp=0+level*2;
-    defp=level*4+4;
-}
-else if(strcasecmp(playerhand,"greatsword"))
-{
-    if(strcasecmp(playertype,"knight")!=0)
-        hitp=20+level*3;
-    else
-        hitp=15+level*3;
-    defp=level*2-6;
-}
-else if(strcasecmp(playerhand,"crossbow"))
-{
-    if(strcasecmp(playertype,"archer")!=0)
-        hitp=13+level*3;
-
-    else
-        hitp=10+level*2;
-    defp=level*3-10;
-}
-else if(!(strcasecmp(playerhand,"escutcheon")))
-{
-    hitp=0+level*3;
-    defp=level*5+5;
-}
-else if(!(strcasecmp(playerhand,"tachi")))
-{
-    if(strcasecmp(playertype,"warrior")!=0)
-        hitp=15+level*3;
-    else
-        hitp=12+level*2;
-    defp=level*3-1;
-}
-else if(strcasecmp(playerhand,"dragon-sword"))
-{
-    if(strcasecmp(playertype,"knight")!=0)
-        hitp=25+level*3;
-    else
-        hitp=20+level*4;
-    defp=level*3-6;
-}
-else
-{
-    playerhand="Bare Hand";
-    hitp=level*2;
-    defp=level;
-}
+        cout<<"\nWhat do you want to buy?\n1-Sword(300)\n2-Bow(250)\n3-Staff(400)\n4-Katana(350)\n5-Shield\n6-Sharpen your weapon\ne-exit\n";
+        cin>>x1;
+        switch(x1)
+        {
+        case 49:
+            {
+                if(money<300)
+                {
+                    cout<<"Purchase not possible";
+                    break;
+                }
+                playerhand="sword";
+                money-=300;
+                break;
+            }
+        case 50:
+            {
+                if(money<250)
+                {
+                    cout<<"Purchase not possible";
+                    break;
+                }
+                playerhand="bow";
+                money-=250;
+                break;
+            }
+        case 51:
+            {
+                if(money<400)
+                {
+                    cout<<"Purchase not possible";
+                    break;
+                }
+                playerhand="staff";
+                money-=400;
+                break;
+            }
+        case 52:
+            {
+                if(money<350)
+                {
+                    cout<<"Purchase not possible";
+                    break;
+                }
+                playerhand="katana";
+                money-=350;
+                break;
+            }
+        case 53:
+            {
+                if(money<300)
+                {
+                    cout<<"Purchase not possible";
+                    break;
+                }
+                playerhand="shield";
+                money-=300;
+                break;
+            }
+        case 54:
+            {
+                if(money>=500&&(strcasecmp(playerhand,"Bare hand")))
+               {
+                cout<<"Congratulations your ";
+                cout.write(playerhand,strlen(playerhand));
+                cout<<" has been upgraded to ";
+                if(!(strcasecmp(playerhand,"sword")))
+                {
+                    cout<<"Greatsword";
+                    playerhand="Greatsword";
+                    money-=500;
+                }
+                else if(!(strcasecmp(playerhand,"bow")))
+                {
+                    cout<<"crossbow";
+                    playerhand="crossbow";
+                    money-=500;
+                }
+                else if(!(strcasecmp(playerhand,"shield")))
+                {
+                    cout<<"Escutcheon";
+                    playerhand="escutcheon";
+                    money-=500;
+                }
+                else if(!(strcasecmp(playerhand,"katana")))
+                {
+                    cout<<"Tachi";
+                    playerhand="tachi";
+                    money-=500;
+                }
+              }
+              else if(!(strcasecmp(playerhand,"greatsword")&&money>=1500)&&(strcasecmp(playerhand,"Bare hand")))
+              {
+                  cout<<"Congratulations your ";
+                  cout.write(playerhand,strlen(playerhand));
+                  cout<<" has been upgraded to ";
+                  cout<<"Dragon sword";
+                  playerhand="dragon-sword";
+                  money-=1500;
+              }
+              else
+              {
+                  cout<<"upgradation not possible\n";
+              }
+              break;
+            }
+        case 'e':cout<<"bye and good luck";break;
+        default:cout<<"Idiot";
+        }
+    }while(x1!='e');
+    weaponsattributes();
 }
