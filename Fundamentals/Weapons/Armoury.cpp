@@ -11,7 +11,7 @@ void armoury()
     char x1;
     do
     {
-        cout<<"What do you want to buy?\n1-Sword(300)\n2-Bow(250)\n3-Staff(400)\n4-Katana(350)\n5-Shield\n6-Sharpen your shield\ne-exit\n";
+        cout<<"\nWhat do you want to buy?\n1-Sword(300)\n2-Bow(250)\n3-Staff(400)\n4-Katana(350)\n5-Shield\n6-Sharpen your weapon\ne-exit\n";
         cin>>x1;
         switch(x1)
         {
@@ -72,8 +72,8 @@ void armoury()
             }
         case 54:
             {
-                if(money>=500)
-              {
+                if(money>=500&&(strcasecmp(playerhand,"Bare hand")))
+               {
                 cout<<"Congratulations your ";
                 cout.write(playerhand,strlen(playerhand));
                 cout<<" has been upgraded to ";
@@ -102,7 +102,7 @@ void armoury()
                     money-=500;
                 }
               }
-              else if(!(strcasecmp(playerhand,"greatsword")&&money>=1500))
+              else if(!(strcasecmp(playerhand,"greatsword")&&money>=1500)&&(strcasecmp(playerhand,"Bare hand")))
               {
                   cout<<"Congratulations your ";
                   cout.write(playerhand,strlen(playerhand));
@@ -113,7 +113,7 @@ void armoury()
               }
               else
               {
-                  cout<<"upgradation not possible";
+                  cout<<"upgradation not possible\n";
               }
               break;
             }
