@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void heath()
+void health()
 {
     /* player-0
        wolf-1
