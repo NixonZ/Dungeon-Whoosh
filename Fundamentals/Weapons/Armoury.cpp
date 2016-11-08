@@ -3,7 +3,7 @@ using namespace std;
 void armoury()
 {
     cout<<"Welcome to the armour shop adventurer\n";
-    int x1;
+    char x1;
     do
     {
         cout<<"What do you want to buy?\n1-Sword(300)\n2-Bow(250)\n3-staff(400)\n4-katana(350)\n5-Shield\n6-Sharpen your shield\ne-exit\n";
@@ -115,5 +115,5 @@ void armoury()
         case 'e':cout<<"bye and good luck";break;
         default:cout<<"Idiot";
         }
-    }while(x1!=6);
+    }while(x1!='e');
 }
