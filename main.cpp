@@ -9,7 +9,7 @@ char *playerhand;
 int money=100;
 int expe=0,level=0;
 int hp[7],healthy;
-char *playertype;
+char *playertype="Bare hand";
 char *name;
 
 using namespace std;
@@ -22,13 +22,12 @@ int main()
   cout<<"your name is name\n";
   name="name";
   ask();
-  //dae;
   playertypo();
   cout<<"Your race is ";
   puts(playertype);
   cout<<"You health is "<<hp[0]<<endl;
-  cout<<S[0]<<endl<<IQ[0]<<endl<<A[0]<<endl<<D[0]<<endl<<C[0];
-  cout<<"how much $$ u want?";
+  cout<<"Strength="<<S[0]<<endl<<"Knowledge="<<IQ[0]<<endl<<"Agility="<<A[0]<<endl<<"Defense="<<D[0]<<endl<<"Courage="<<C[0];
+  cout<<"how much $$ u want?\n";
   cin>>money;
   armoury();
   cout<<battle(1);
