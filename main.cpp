@@ -11,11 +11,20 @@ int expe=0,level=0;
 int hp[7],healthy;
 char *playertype="Bare hand";
 char *name;
+bag playerbag;
+/*struct bag
+{
+    int potion_static;
+    char weapon_static[3][20];
+};*/
 
 using namespace std;
 
 int main()
 {
+  strcpy(playerbag.weapon_static[0],"Bare hand");
+  strcpy(playerbag.weapon_static[1],"Bare hand");
+  strcpy(playerbag.weapon_static[2],"Bare hand");
   health();
   S[0]=4;D[0]=4;IQ[0]=4;A[0]=4;C[0]=4;
   cout<<"welcome adventurer\n";
