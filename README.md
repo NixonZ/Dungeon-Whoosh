@@ -1,3 +1,3 @@
 # Dungeon-Whoosh
-RPG (Text based)   
+RPG (With Graphics)   
 Pre-Alpha v-1.0
