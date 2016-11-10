@@ -11,6 +11,6 @@ void playertypo();
 void armoury();
 void weaponsattributes();
 int ask();
-
+void potions();
 
 #endif
