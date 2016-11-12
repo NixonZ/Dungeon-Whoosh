@@ -79,6 +79,8 @@ void armoury()
             {
                 if(money>=500&&(strcasecmp(playerhand,"Bare hand")))
                {
+                   if((strcasecmp(playerhand,"tachi"))&&(strcasecmp(playerhand,"crossbow"))&&(strcasecmp(playerhand,"escutcheon")))
+                {
                 cout<<"Congratulations your ";
                 cout.write(playerhand,strlen(playerhand));
                 cout<<" has been upgraded to ";
@@ -110,7 +112,6 @@ void armoury()
                     weaponsattributes();
                     money-=500;
                 }
-              }
               else if(!(strcasecmp(playerhand,"greatsword")&&money>=1500)&&(strcasecmp(playerhand,"Bare hand")))
               {
                   cout<<"Congratulations your ";
@@ -125,6 +126,10 @@ void armoury()
               {
                   cout<<"upgradation not possible\n";
               }
+               }
+               else
+                cout<<"Upgradation not possible\n";
+               }
               break;
             }
         case 'e':cout<<"bye and good luck";break;
