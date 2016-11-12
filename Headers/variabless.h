@@ -4,7 +4,9 @@
 struct bag
 {
     int potion_static;
-    char weapon_static[3][20];
+    char *weapon_static1;
+    char *weapon_static2;
+    char *weapon_static3;
 };
 extern int S[7],D[7],IQ[7],A[7],C[7];
 extern int hitp,defp,magep,wear;
