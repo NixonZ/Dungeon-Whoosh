@@ -23,6 +23,7 @@ void armoury()
                     break;
                 }
                 playerhand="sword";
+                weaponsattributes();
                 money-=300;
                 break;
             }
@@ -34,6 +35,7 @@ void armoury()
                     break;
                 }
                 playerhand="bow";
+                weaponsattributes();
                 money-=250;
                 break;
             }
@@ -45,6 +47,7 @@ void armoury()
                     break;
                 }
                 playerhand="staff";
+                weaponsattributes();
                 money-=400;
                 break;
             }
@@ -56,6 +59,7 @@ void armoury()
                     break;
                 }
                 playerhand="katana";
+                weaponsattributes();
                 money-=350;
                 break;
             }
@@ -67,6 +71,7 @@ void armoury()
                     break;
                 }
                 playerhand="shield";
+                weaponsattributes();
                 money-=300;
                 break;
             }
@@ -81,24 +86,28 @@ void armoury()
                 {
                     cout<<"Greatsword";
                     playerhand="Greatsword";
+                    weaponsattributes();
                     money-=500;
                 }
                 else if(!(strcasecmp(playerhand,"bow")))
                 {
                     cout<<"crossbow";
                     playerhand="crossbow";
+                    weaponsattributes();
                     money-=500;
                 }
                 else if(!(strcasecmp(playerhand,"shield")))
                 {
                     cout<<"Escutcheon";
                     playerhand="escutcheon";
+                    weaponsattributes();
                     money-=500;
                 }
                 else if(!(strcasecmp(playerhand,"katana")))
                 {
                     cout<<"Tachi";
                     playerhand="tachi";
+                    weaponsattributes();
                     money-=500;
                 }
               }
@@ -109,6 +118,7 @@ void armoury()
                   cout<<" has been upgraded to ";
                   cout<<"Dragon sword";
                   playerhand="dragon-sword";
+                  weaponsattributes();
                   money-=1500;
               }
               else
