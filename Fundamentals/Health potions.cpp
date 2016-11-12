@@ -1,8 +1,13 @@
 #include<iostream>
-#include"../../Headers/pointstuff.h"
-#include"../../Headers/variabless.h"
+#include"../Headers/pointstuff.h"
+#include"../Headers/variabless.h"
 using namespace std;
 void potions()
 {
-    healthy+=20;
+    int potionmax=10+level*5;
+    if(healthy>=hp[0]-potionmax)
+    healthy=hp[0];
+    else
+        healthy+=potionmax;
+
 }
