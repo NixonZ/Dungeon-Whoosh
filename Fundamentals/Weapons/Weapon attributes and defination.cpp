@@ -48,17 +48,17 @@ else if(!(strcasecmp(playerhand,"shield")))
     hitp=0+level*2;
     defp=level*4+4;
 }
-else if(strcasecmp(playerhand,"greatsword"))
+else if(!(strcasecmp(playerhand,"greatsword")))
 {
-    if(strcasecmp(playertype,"knight")!=0)
+    if(!(strcasecmp(playertype,"knight")))
         hitp=20+level*3;
     else
         hitp=15+level*3;
     defp=level*2-6;
 }
-else if(strcasecmp(playerhand,"crossbow"))
+else if(!(strcasecmp(playerhand,"crossbow")))
 {
-    if(strcasecmp(playertype,"archer")!=0)
+    if(!(strcasecmp(playertype,"archer")))
         hitp=13+level*3;
 
     else
@@ -78,9 +78,9 @@ else if(!(strcasecmp(playerhand,"tachi")))
         hitp=12+level*2;
     defp=level*3-1;
 }
-else if(strcasecmp(playerhand,"dragon-sword"))
+else if(!(strcasecmp(playerhand,"dragon-sword")))
 {
-    if(strcasecmp(playertype,"knight")!=0)
+    if(strcasecmp(playertype,"knight")==0)
         hitp=25+level*3;
     else
         hitp=20+level*4;
