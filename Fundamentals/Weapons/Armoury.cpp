@@ -114,9 +114,6 @@ void armoury()
                 }
               else if(!(strcasecmp(playerhand,"greatsword")&&money>=1500)&&(strcasecmp(playerhand,"Bare hand")))
               {
-                  cout<<"Congratulations your ";
-                  cout.write(playerhand,strlen(playerhand));
-                  cout<<" has been upgraded to ";
                   cout<<"Dragon sword";
                   playerhand="dragon-sword";
                   weaponsattributes();
