@@ -12,5 +12,6 @@ void armoury();
 void weaponsattributes();
 int ask();
 void potions();
+void bagf();
 
 #endif
