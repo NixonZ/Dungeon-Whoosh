@@ -13,7 +13,7 @@ void attributes()
     /* player-0
        wolf-1
        ogre-2
-       warrior(enemy)-3
+       swordsman(enemy)-3
        knight(enemy)-4
        Paladin(enemy)-5
        Dragon-6*/
