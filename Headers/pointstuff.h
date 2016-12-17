@@ -4,7 +4,8 @@
 #include<windows.h>
 void hospital(int why);
 void health();
-float battle(int a1);
+float damage(int a1);
+void battle();
 void attributes();
 void expe1();
 void playertypo();
