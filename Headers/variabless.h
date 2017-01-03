@@ -1,6 +1,6 @@
 #ifndef VARIABLESS_H_INCLUDED
 #define VARIABLESS_H_INCLUDED
-
+#include"pointstuff.h"
 struct bag
 {
     int potion_static;

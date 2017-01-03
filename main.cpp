@@ -11,6 +11,7 @@ int hp[7],healthy;
 char *playertype;
 char name[100];
 bag playerbag;
+int S[7],D[7],IQ[7],A[7],C[7];
 
 using namespace std;
 
@@ -34,7 +35,7 @@ int main()
   cin>>money;
   cout<<"Your journey begins now\n";
   armoury();
-  cout<<endl<<battle(1)<<endl;
+  cout<<endl;battle();
   screen_faint();
   bagf();
   }

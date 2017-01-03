@@ -2,6 +2,7 @@
 #define POINTSTUFF_H_INCLUDED
 
 #include<windows.h>
+#include"variabless.h"
 void hospital(int why);
 void health();
 float damage(int a1);
