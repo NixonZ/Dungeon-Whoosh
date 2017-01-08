@@ -8,6 +8,7 @@ void starting()
     cout<<"This game is best played with full-screen\n";
     cin.get();
     system("cls");
+    menu();
     cout<<"Long time ago, the land was ravaged by the evil and the existence of mankind was at risk\n"
         <<"Therefore, many warriors joined forces to save humanity\n"
         <<"You were one of them\n";

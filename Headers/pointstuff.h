@@ -3,6 +3,7 @@
 
 #include<windows.h>
 #include"variabless.h"
+void menu();
 void hospital(int why);
 void health();
 float damage(int a1);
