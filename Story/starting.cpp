@@ -20,14 +20,15 @@ void starting()
         <<"You quickly rose to your feet\n"; cin.get(); cout<<"and went to the bathroom, because good children do not pee in the bed.\n"
         <<"Well, you returned after a hour ";//you had eaten spicy food
     cout<<"just to find out that your brother was taken away to join the army "
-        <<"you promised to join the army yourself and rid the world of the evil\nYou went home and picked up the old coin purse\n";
+        <<"you promised to join the army yourself and rid the world of the evil\nYou went home and picked up the old coin purse\n"
+        <<"You found some whoosh coins\n";
     money=100;
     cin.get();
 }
-tutorial()
+void tutorial()
 {
     int x;
-    cout<<"Part I:Training\n";
+    cout<<"\nPart I:Training\n";
     cout<<"In order to save the world, you'll need some formal training\nIt will cost 10 whoosh coins,is it ok?\n"
         <<"1-Yes\n2-No\n";
         cin>>x;
@@ -36,4 +37,5 @@ tutorial()
     else
         money-=10;
     cout<<"During your training you were sent to a hunt, you encountered a wolf\n";
+    hud(0,1);
 }

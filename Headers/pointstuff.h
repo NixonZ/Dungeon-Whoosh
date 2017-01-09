@@ -18,5 +18,7 @@ void potions();
 void bagf();
 void screen_faint();
 void starting();
+void tutorial();
+void hud(int a,int b);
 
 #endif

@@ -16,5 +16,6 @@ extern int expe,level;
 extern int hp[7],healthy;
 extern char *playertype;
 extern bag playerbag;
+extern char name[100];
 
 #endif
