@@ -39,3 +39,10 @@ void tutorial()
     cout<<"During your training you were sent to a hunt, you encountered a wolf\n";
     hud(0,1);
 }
+void town()
+{
+    cout<<"After seeing your extraordinary skills in the tutorial, the commander gave you 300 whooshcoins\n"
+        <<"You went to town and went to armoury to buy weapons\n";
+    armoury();
+    cout<<"You picked up your weapons and went out to battle";
+}

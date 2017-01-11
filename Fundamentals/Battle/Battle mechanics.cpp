@@ -17,7 +17,8 @@ void hud(int a,int b)
     /*Designing HUD*/
     int x;
     int HP=hp[b];
-    cout<<"Your level:"<<level;
+    cout.write(name,strlen(name));
+    cout<<"\nYour level:"<<level;
     do
     {
         cout<<endl<<"What do you want to do?";
