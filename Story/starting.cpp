@@ -40,7 +40,7 @@ void tutorial()
     hud(0,1);
 }
 void town()
-{
+    {
     cout<<"After seeing your extraordinary skills in the tutorial, the commander gave you 300 whooshcoins\n"
         <<"You went to town and went to armoury to buy weapons\n";
     armoury();

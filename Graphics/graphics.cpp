@@ -66,7 +66,7 @@ cout<<"                                     .-.\n"
     <<"L_J|     |L_J|   |L_J|    L_J|  |[]|     |[]|  |L_J    |L_J|   |L_J|      |L_J\n"
     <<"L_JL_____JL_JL___JL_JL____|-||  |[]|     |[]|  ||-|____JL_JL___JL_JL______JL_J\n";
 }
-void town()
+void towndesign()
 {
 cout<<"                   \\  |  /         ___________\n"
     <<"    ____________  \\ \\_# /         |  ___      |       _________\n"
@@ -159,8 +159,4 @@ void swordsman()
 <<"         \\ /   | \\___\n"
 <<"         / |   \\_____\\\n"
 <<"         `-'\n";
-}
-int main()
-{
-    swordsman();
 }
