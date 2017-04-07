@@ -8,6 +8,7 @@ void starting()
     cout<<"This game is best played with full-screen\n";
     cin.get();
     system("cls");
+    menu();
     cout<<"Long time ago, the land was ravaged by the evil and the existence of mankind was at risk\n"
         <<"Therefore, many warriors joined forces to save humanity\n"
         <<"You were one of them\n";
@@ -19,14 +20,15 @@ void starting()
         <<"You quickly rose to your feet\n"; cin.get(); cout<<"and went to the bathroom, because good children do not pee in the bed.\n"
         <<"Well, you returned after a hour ";//you had eaten spicy food
     cout<<"just to find out that your brother was taken away to join the army "
-        <<"you promised to join the army yourself and rid the world of the evil\nYou went home and picked up the old coin purse\n";
+        <<"you promised to join the army yourself and rid the world of the evil\nYou went home and picked up the old coin purse\n"
+        <<"You found some whoosh coins\n";
     money=100;
     cin.get();
 }
-tutorial()
+void tutorial()
 {
     int x;
-    cout<<"Part I:Training\n";
+    cout<<"\nPart I:Training\n";
     cout<<"In order to save the world, you'll need some formal training\nIt will cost 10 whoosh coins,is it ok?\n"
         <<"1-Yes\n2-No\n";
         cin>>x;
@@ -35,4 +37,12 @@ tutorial()
     else
         money-=10;
     cout<<"During your training you were sent to a hunt, you encountered a wolf\n";
+    hud(0,1);
+}
+void town()
+    {
+    cout<<"After seeing your extraordinary skills in the tutorial, the commander gave you 300 whooshcoins\n"
+        <<"You went to town and went to armoury to buy weapons\n";
+    armoury();
+    cout<<"You picked up your weapons and went out to battle";
 }

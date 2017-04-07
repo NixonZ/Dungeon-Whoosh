@@ -12,6 +12,7 @@ void expe1()
     {
         expe=0;
         level++;
+        cout<<"Your level increased congratulations\n";
         health();
     }
 }

@@ -23,19 +23,18 @@ int main()
   playerbag.weapon_static2="Bare hand";
   playerbag.weapon_static3="Bare hand";
   health();
+  healthy=hp[0];
   starting();
   cout<<"Enter your name\n";
   cin.getline(name,100);
   playertypo();
   cout<<"Your race is ";
   puts(playertype);
-  cout<<"You health is "<<hp[0]<<endl;
-  cout<<"Strength="<<S[0]<<endl<<"Knowledge="<<IQ[0]<<endl<<"Agility="<<A[0]<<endl<<"Defense="<<D[0]<<endl<<"Courage="<<C[0];
-  cout<<"\nhow much $$ u want?\n";
-  cin>>money;
-  cout<<"Your journey begins now\n";
-  armoury();
-  cout<<endl;battle();
-  screen_faint();
-  bagf();
-  }
+  cout<<"You health is "<<healthy<<endl;
+  cout<<"Strength="<<S[0]<<endl
+      <<"Knowledge="<<IQ[0]<<endl
+      <<"Agility="<<A[0]<<endl
+      <<"Defense="<<D[0]<<endl
+      <<"Courage="<<C[0]<<endl;
+  tutorial();
+}

@@ -3,6 +3,7 @@
 
 #include<windows.h>
 #include"variabless.h"
+void menu();
 void hospital(int why);
 void health();
 float damage(int a1);
@@ -17,5 +18,7 @@ void potions();
 void bagf();
 void screen_faint();
 void starting();
+void tutorial();
+void hud(int a,int b);
 
 #endif
